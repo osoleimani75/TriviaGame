@@ -1,0 +1,30 @@
+
+.container{
+    margin-top:  150px !important;
+
+}
+
+.timeLeft{
+    font-weight: bold;
+    font-size: 1.2em; 
+    margin: 5px 15px  !important;
+}
+
+.list-group-header{
+    padding: 25px !important;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ffffff !important;
+}
+.choose{
+    cursor: pointer;
+}
+p{ margin: 0 !important;}
+
+.message{
+    font-size: 1.9em;
+    font-weight: bold;
+    padding-left: 40px !important; 
+}
+.msgWrong{color: darkred !important;}
+.msgCorrect{color: green !important;}

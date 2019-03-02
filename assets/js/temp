@@ -1,0 +1,55 @@
+let timer;
+let quizeTime = 30;
+var game = {
+    questions: "",
+    currentQuestion: 0,
+    counter: quizeTime,
+    correct: 0,
+    incorrect: 0,
+
+    decreaseTime: function() {
+        game.counter--;
+        $("#showCounter").text(game.counter);
+        // TimeUP 
+        if (game.counter === 0) {
+            game.timeUp();
+        }
+      },
+
+    timeUp: function(){
+        clearInterval(timer); 
+        //Show on The page 
+        $("#msgResult").text(game.counter);
+
+    },   
+
+    showQuestion: function(){
+
+        qItem = $("<a>",{
+            "class": 'list-group-item list-group-item-action',
+            text: "a div",
+            click: function(e){
+                e.preventDefault();
+                alert("test")
+            }});
+            console.log(qItem);
+            $("#test").append(qItem);    
+            console.log( $("#test"));
+    }
+
+}
+
+showQuestion = function(){
+
+    qItem = $("<a>",{
+        "class": 'list-group-item list-group-item-action',
+        text: "a div",
+        click: function(e){
+            e.preventDefault();
+            alert("test")
+        }});
+
+     titem = $("<p>").text("my name is omid")   
+        $("#omid").text("<div>test</div>");    
+        console.log( $("#test"));
+}
